@@ -10,3 +10,15 @@ python에서 @property 데코레이터를 이용하여 다른언어에서 사용
 해당 문제 코드를 보면 알 수 있듯이 get부분은 property가 하고 set부분은 해당 함수뒤에 setter를 붙이는 형식으로 사용된다. <br>
 참고로 property가 setter보다 윗줄에 사용되어야 한다.<br>
 *****
+
+#### 연습문제 2
+> 국적을 출력하는 printNationality 정적 메서드를 갖는 Korean 클래스를 정의하고 메서드를 호출하는 코드를 작성하자.
+
+**알고가기** <br>
+정적메소드란 무엇인가? <br>
+정적메소드는 클래스에서 직접 접근할 수 있는 메소드이다. <br>
+파이썬에서 사용할 수 있는 메소드는 두가지가 있다. `@staticmethod`와 `@classmethod` 이렇게 두가지이다. <br>
+staticmethod는 따로 인자를 가질 필요없다. classmethod는 인스턴스 메소드와 달리 self가 아닌 cls라는 인자를 사용한다. <br>
+그러면 차이가 뭐냐?  <br>
+staticmethod는 부모클래스의 속성 값을 가져오지만 classmethod는 현재 클래스의 클래스 속성을 가져온다. 코드를 보고 이해할 수 있길 바란다.
+*****
